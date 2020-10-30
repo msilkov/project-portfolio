@@ -8,20 +8,29 @@
   background-position: 0 0;
   background-repeat: repeat;
 }
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1400px;
-}
-.logo {
+
+.logo span {
+  z-index: 2;
+  .bottom-line {
+    position: relative;
+    width: fit-content;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      left: -5px;
+      right: -5px;
+      height: 12px;
+      background-color: var(--underline);
+      z-index: 1;
+    }
+  }
 }
 .logo-link {
   font-size: 42px;
   font-weight: 900;
-  text-align: left;
 }
-.nav-links {
+.navigation {
 }
 .nav-link {
   font-size: 20px;
@@ -31,10 +40,7 @@
   }
 }
 .socials {
+  
 }
-.social-link {
-  margin-right: 20px;
-  &:last-child {
-    margin-right: 0;
-  }
-}
+
+

@@ -3,6 +3,10 @@
   --red: #ea736d;
   --yellow: #fbdc4d;
   --fr: "M PLUS 1p";
+  --btnBg: #fbdc4d;
+  --btnAct: #e1bc10;
+  --btnHov: #ffd200;
+  --underline: #fbdc4d;
 }
 * {
   box-sizing: border-box;
@@ -36,7 +40,8 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+span {
   margin: 0;
   padding: 0;
 }
@@ -75,4 +80,108 @@ button {
     max-width: 1140px;
     padding: 0;
   }
+}
+.container-large {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bottom-line {
+  position: relative;
+  width: fit-content;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: -5px;
+    right: -5px;
+    height: 12px;
+    background-color: var(--underline);
+    z-index: -1;
+  }
+}
+.page-btn__cl {
+  display: inline-block;
+  font-style: var(--fr);
+  height: 64px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 22px;
+  line-height: 64px;
+  background-color: var(--btnBg);
+  border-radius: 50px;
+  &:hover {
+    background-color: var(--btnHov);
+  }
+  &:active,
+  :visited {
+    background-color: var(--btnAct);
+  }
+}
+.page-btn__tr {
+  display: inline-block;
+  font-style: var(--fr);
+  height: 64px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 22px;
+  line-height: 58px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  border: 3px solid #4b4b4b;
+  &:hover {
+    border: 3px solid #797979;
+  }
+  &:active {
+    border: 3px solid #181818;
+  }
+}
+.animate-borger {
+  position: relative;
+  width: fit-content;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    height: 4px;
+    background-color: var(--yellow);
+    width: 0%;
+    transition: 0.5s;
+  }
+}
+.animate-borger:hover:after {
+  width: 110%;
+}
+.animate-borger:focus {
+  border: 1px dotted #000000;
+}
+.git-link svg {
+  width: 28px;
+  height: 28px;
+  fill: #181818;
+  margin-right: 20px;
+}
+.git-link:hover svg {
+  fill: #6cc644;
+}
+.in-link svg {
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+  fill: #181818;
+}
+.in-link:hover svg {
+  fill: #45668e;
+}
+.vk-link svg {
+  width: 28px;
+  height: 28px;
+  fill: #181818;
+}
+.vk-link:hover svg {
+  fill: #45668e;
 }
