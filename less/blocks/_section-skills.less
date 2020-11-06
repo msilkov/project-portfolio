@@ -1,0 +1,129 @@
+.section-skills {
+  padding-top: 20px;
+  padding-bottom: 238px;
+}
+.skills-list {
+  max-width: 600px;
+  margin-left: 48px;
+  h2 {
+    margin-bottom: 40px;
+    text-shadow: 0 3px 42px #ffffff;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  ul {
+    margin-bottom: 43px;
+    list-style-type: none;
+    @media (min-width: 576px) {
+    }
+    @media (min-width: 768px) {
+    }
+    @media (min-width: 992px) {
+    }
+    @media (min-width: 1200px) {
+      li:before {
+        content: "—";
+        position: relative;
+        left: -5px;
+      }
+    }
+  }
+}
+.skills-list__item {
+  text-shadow: 0 3px 42px #ffffff;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 400;
+}
+.skills-contacts {
+  max-width: 350px;
+  margin-right: 30px;
+  h2 {
+    margin-bottom: 45px;
+    text-shadow: 0 3px 42px #ffffff;
+    color: #000000;
+    font-size: 40px;
+    font-weight: 800;
+  }
+}
+.skills-contacts__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+
+  a {
+    color: #000000;
+    margin-right: 30px;
+    &:nth-child(3) {
+      margin-right: 26px;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+.git-contacts-link {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    color: #6cc644;
+  }
+}
+.tg-contacts-link {
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    color: #039be5;
+  }
+}
+.vk-contacts-link {
+  width: 53px;
+  height: 53px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  border-radius: 50%;
+  &:hover {
+    background-color: #4d76a1;
+  }
+  i {
+    color: #ffffff;
+    font-size: 28px;
+  }
+}
+.wa-contacts-link {
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  &:hover {
+    background-color: #55cb60;
+    color: #ffffff;
+  }
+}
+.email {
+  display: inline-block;
+  text-decoration: underline;
+  color: #000000;
+  text-shadow: 0 3px 42px #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  &:hover {
+    color: #35afea;
+    text-decoration: underline;
+  }
+  &:active {
+    color: #ea655f;
+  }
+}

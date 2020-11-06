@@ -11,36 +11,58 @@
 
 .logo span {
   z-index: 2;
-  .bottom-line {
-    position: relative;
-    width: fit-content;
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 8px;
-      left: -5px;
-      right: -5px;
-      height: 12px;
-      background-color: var(--underline);
-      z-index: 1;
-    }
+}
+.logo-link .bottom-line {
+  position: relative;
+  width: fit-content;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 8px;
+    left: -5px;
+    right: -5px;
+    height: 12px;
+    background-color: var(--underline);
+    z-index: -1;
   }
 }
 .logo-link {
+  color: #000000;
   font-size: 42px;
   font-weight: 900;
 }
-.navigation {
-}
-.nav-link {
+.header-nav__link {
+  color: #000000;
   font-size: 20px;
   margin-right: 80px;
+  font-weight: 700;
   &:last-child {
     margin-right: 0;
   }
 }
-.socials {
-  
+.git-header-link svg {
+  width: 28px;
+  height: 28px;
+  fill: #181818;
+  margin-right: 20px;
+  &:hover {
+    fill: #6cc644;
+  }
 }
-
-
+.in-header-link svg {
+  margin-right: 20px;
+  width: 28px;
+  height: 28px;
+  fill: #181818;
+  &:hover {
+    fill: #45668e;
+  }
+}
+.vk-header-link svg {
+  width: 28px;
+  height: 28px;
+  fill: #181818;
+  &:hover {
+    fill: #45668e;
+  }
+}
